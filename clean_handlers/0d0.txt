@@ -1,0 +1,2 @@
+neg     word ptr [esp]
+pushf

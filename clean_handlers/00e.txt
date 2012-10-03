@@ -1,0 +1,5 @@
+lodsb
+movzx   eax, al
+mov     eax, [edi+eax*4]
+movzx   ax, byte ptr [eax]
+push    ax

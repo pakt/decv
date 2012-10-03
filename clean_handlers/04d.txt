@@ -1,0 +1,4 @@
+pop     ecx
+pop     eax
+movzx   ecx, ax
+push    ecx

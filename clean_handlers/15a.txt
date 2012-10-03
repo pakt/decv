@@ -1,0 +1,3 @@
+lodsd
+add     eax, [edi+2Ch]
+push    eax

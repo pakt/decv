@@ -1,0 +1,2 @@
+push    esp
+add	dword ptr [esp], 4

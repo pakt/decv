@@ -1,0 +1,3 @@
+pop     ax
+inc     byte ptr [esp]
+pushf

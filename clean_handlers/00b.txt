@@ -1,0 +1,1 @@
+push    word ptr [edx]

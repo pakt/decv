@@ -1,0 +1,3 @@
+pop     ax
+dec     word ptr [esp]
+pushf

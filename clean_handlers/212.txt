@@ -1,0 +1,18 @@
+    mov ecx, [edi+38h]
+    mov edx, edi
+    or  ecx, ecx
+    jz  fin
+    mov esi, esp
+    add esi, 24h
+    mov edi, esi
+    add edi, ecx
+    std
+    mov ecx, 0ah
+    rep movsd
+    add esp, [edx+38h]
+    mov [edx+38h], 0
+fin:
+    mov [edx+30h], 0
+    popa
+    popf
+    retn

@@ -1,0 +1,3 @@
+pop     ax
+bts     [esp], ax
+pushf

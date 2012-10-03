@@ -1,0 +1,8 @@
+pop     cx
+pop     ax
+idiv    cl
+movzx   cx, ah
+push    cx
+movzx   cx, al
+push    cx
+pushf

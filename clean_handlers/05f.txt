@@ -1,0 +1,3 @@
+pop     cx
+rol     byte ptr [esp], cl
+pushf

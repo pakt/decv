@@ -1,0 +1,7 @@
+pop     ecx
+pop     eax
+pop	edx
+div     ecx
+push    edx
+push    eax
+pushf

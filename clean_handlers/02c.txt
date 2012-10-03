@@ -1,0 +1,5 @@
+pop     ax
+pop     cx
+imul    cx, ax
+push    cx
+pushf

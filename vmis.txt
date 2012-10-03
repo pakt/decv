@@ -1,0 +1,47 @@
+# handler classification w.r.t. operand size (byte, word, dword)
+# format:
+# mnemonic;top class name;n1,n2,n3;custom disasm line
+# if only n1 is present, n2=n1+1, n3=n2+1
+# if only two values are present (like ;n1,n2;) they are interpreted as word,dword variants (there will be no byte variant)
+# if top class name is not present, it is set to "VM_Mnemonic"
+#
+# everything after # is ignored
+#
+#movsx;;080,081,085; strange size combinations
+
+load;load const;002;d += " %s"%hex(param)
+load;load addr;00a;d += " [addr]"
+load;load reg;00e,00f,007;d += " %s"%REG_DICT[param]    
+load;load ptr;011,012,20c;d += " [%s]"%hex(param)
+store;store addr;016;d += " [addr]"
+store;store reg;01a;d += " %s"%REG_DICT[param]          #storeZX
+store;store ptr;01e;d += " [%s]"%hex(param)
+add;;022;
+sub;;027;
+imul2;;02c,02d;
+adc;;02f;
+and;;033;
+cmp;;037;
+xor;;03b;
+or;;03f;
+test;;043;
+inc;;053;
+rcl;;057;
+rcr;;05b;
+rol;;05f;
+ror;;063;
+sar;;06b;
+shl;;067;
+shr;;073;
+dec;;077;
+bt;;0a8,0a9; #word, dword? FIXME?
+btc;;0ab,0ac; #word, dword? FIXME?
+btr;;0af,0b0; #word, dword? FIXME?
+bts;;0b3,0b4; #word, dword? FIXME?
+sbb;;0b7;
+mul;;0bb;
+imul1;;0bf;
+div;;0c3;
+idiv;;0c7;
+neg;;0cf;
+not;;0d3;

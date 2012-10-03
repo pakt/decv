@@ -1,0 +1,4 @@
+pop     ax
+pop     cx
+test    ax, cx
+pushf

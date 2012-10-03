@@ -1,0 +1,2 @@
+lodsd
+add edx, eax

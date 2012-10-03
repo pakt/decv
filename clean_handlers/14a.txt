@@ -1,0 +1,4 @@
+mov     dword ptr [edi+30h], 0
+popa
+popf
+retn

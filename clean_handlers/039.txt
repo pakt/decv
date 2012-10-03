@@ -1,0 +1,4 @@
+pop     eax
+pop     ecx
+cmp     ecx, eax
+pushf

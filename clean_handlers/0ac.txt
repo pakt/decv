@@ -1,0 +1,3 @@
+pop     ax
+btc     [esp], ax
+pushf

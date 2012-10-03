@@ -1,0 +1,3 @@
+pop     eax
+bswap   eax
+push    eax

@@ -1,0 +1,3 @@
+pop     ax
+or      [esp], ax
+pushf

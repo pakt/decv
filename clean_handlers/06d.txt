@@ -1,0 +1,3 @@
+pop     cx
+sar     dword ptr [esp], cl
+pushf

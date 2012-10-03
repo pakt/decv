@@ -1,0 +1,1 @@
+and     dword ptr [edi+1Ch], 0FFFFFDFFh

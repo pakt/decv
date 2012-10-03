@@ -1,0 +1,2 @@
+push    sp
+add	word [esp], 2

@@ -1,0 +1,8 @@
+mov     eax, [edi+1Ch]
+and     eax, 1
+or      eax, eax
+jz      short loc_603838
+and     dword ptr [edi+1Ch], 0FFFFFFFEh
+jmp     short loc_60383C
+or      dword ptr [edi+1Ch], 1
+mov     ebx, ebx

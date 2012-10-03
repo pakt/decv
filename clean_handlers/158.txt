@@ -1,0 +1,4 @@
+lodsb
+movzx   eax, al
+pop     dx
+mov     [edi+eax*4+1], dl

@@ -1,0 +1,2 @@
+lodsd
+pop     word ptr [eax]

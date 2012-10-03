@@ -1,0 +1,3 @@
+lodsd
+movzx   ax, byte ptr [eax]
+push    ax

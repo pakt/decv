@@ -1,0 +1,6 @@
+lodsd
+cmp     dword ptr [edi+20h], 0
+jz      short loc_603B53
+add     esi, eax
+mov     ebx, 0
+mov     eax, eax

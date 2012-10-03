@@ -1,0 +1,2 @@
+movzx   ax, byte ptr [edx]
+push    ax

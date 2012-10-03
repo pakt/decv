@@ -1,0 +1,2 @@
+mov     eax, [edi+2Ch]
+add     edx, eax

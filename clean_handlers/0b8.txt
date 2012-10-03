@@ -1,0 +1,5 @@
+push	dword ptr [edi+1ch]
+popf
+pop     ax
+sbb     [esp], ax
+pushf

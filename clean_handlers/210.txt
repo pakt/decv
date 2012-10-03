@@ -1,0 +1,3 @@
+pop     eax
+push    edx
+mov     edx, eax

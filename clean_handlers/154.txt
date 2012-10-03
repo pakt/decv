@@ -1,0 +1,3 @@
+lodsd
+add     esi, eax
+mov     ebx, 0

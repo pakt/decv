@@ -1,0 +1,2 @@
+lodsd
+push    dword ptr [eax]

@@ -1,0 +1,155 @@
+lodsd
+and     al, 7Fh
+push    ebx
+mov     ebx, eax
+mov     dword ptr [edi+20h], 1
+mov     dword ptr [edi+24h], 0
+xor     edx, edx
+and     eax, 200h
+mov     ecx, [edi+1Ch]
+and     ecx, 1
+shr     ecx, 0
+or      eax, eax
+jz      short loc_6039C9
+mov     eax, ebx
+and     eax, 100h
+shr     eax, 8
+xor     eax, ecx
+not     eax
+and     eax, 1
+or      edx, eax
+shl     edx, 1
+inc     dword ptr [edi+24h]
+mov     eax, ebx
+and     eax, 800h
+or      eax, eax
+jz      short loc_6039F5
+mov     ecx, [edi+1Ch]
+and     ecx, 40h
+shr     ecx, 6
+mov     eax, ebx
+and     eax, 400h
+shr     eax, 0Ah
+xor     eax, ecx
+not     eax
+and     eax, 1
+or      edx, eax
+shl     edx, 1
+inc     dword ptr [edi+24h]
+mov     eax, ebx
+and     eax, 2000000h
+or      eax, eax
+jz      short loc_603A21
+mov     ecx, [edi+1Ch]
+and     ecx, 4
+shr     ecx, 0Ah
+mov     eax, ebx
+and     eax, 1000000h
+shr     eax, 18h
+xor     eax, ecx
+not     eax
+and     eax, 1
+or      edx, eax
+shl     edx, 1
+inc     dword ptr [edi+24h]
+mov     eax, ebx
+and     eax, 2000h
+or      eax, eax
+jz      short loc_603A50
+mov     ecx, [edi+1Ch]
+and     ecx, 80h
+shr     ecx, 7
+mov     eax, ebx
+and     eax, 1000h
+shr     eax, 0Ch
+xor     eax, ecx
+not     eax
+and     eax, 1
+or      edx, eax
+shl     edx, 1
+inc     dword ptr [edi+24h]
+mov     eax, ebx
+and     eax, 8000h
+or      eax, eax
+jz      short loc_603A7F
+mov     ecx, [edi+1Ch]
+and     ecx, 800h
+shr     ecx, 0Bh
+mov     eax, ebx
+and     eax, 4000h
+shr     eax, 0Eh
+xor     eax, ecx
+not     eax
+and     eax, 1
+or      edx, eax
+shl     edx, 1
+inc     dword ptr [edi+24h]
+mov     eax, ebx
+and     eax, 20000h
+or      eax, eax
+jz      short loc_603AAB
+mov     ecx, [edi+1Ch]
+and     ecx, 4
+shr     ecx, 2
+mov     eax, ebx
+and     eax, 10000h
+shr     eax, 10h
+xor     eax, ecx
+not     eax
+and     eax, 1
+or      edx, eax
+shl     edx, 1
+inc     dword ptr [edi+24h]
+mov     eax, ebx
+and     eax, 80000h
+or      eax, eax
+jz      short loc_603AE7
+mov     ecx, [edi+1Ch]
+and     ecx, 80h
+shr     ecx, 7
+mov     eax, [edi+1Ch]
+and     eax, 800h
+shr     eax, 0Bh
+xor     ecx, eax
+mov     eax, ebx
+and     eax, 40000h
+shr     eax, 12h
+xor     eax, ecx
+not     eax
+and     eax, 1
+or      edx, eax
+shl     edx, 1
+inc     dword ptr [edi+24h]
+mov     eax, ebx
+and     eax, 200000h
+or      eax, eax
+jz      short loc_603B06
+mov     eax, [edi+28h]
+mov     eax, [edi+eax*4]
+and     eax, 0FFFFh
+or      eax, eax
+jnz     short loc_603B06
+mov     edx, 1
+mov     eax, ebx
+and     eax, 800000h
+or      eax, eax
+jz      short loc_603B20
+mov     eax, [edi+28h]
+mov     eax, [edi+eax*4]
+or      eax, eax
+jnz     short loc_603B20
+mov     edx, 1
+mov     ecx, [edi+24h]
+mov     eax, 1
+shl     eax, cl
+dec     eax
+and     ebx, 10h
+or      ebx, ebx
+jnz     short loc_603B37
+mov     [edi+20h], edx
+jmp     short loc_603B44
+shr     edx, 1
+cmp     eax, edx
+jz      short loc_603B44
+mov     dword ptr [edi+20h], 0
+pop     ebx

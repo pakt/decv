@@ -1,0 +1,3 @@
+lodsb
+movzx   eax, al
+pop     dword ptr [edi+eax*4]

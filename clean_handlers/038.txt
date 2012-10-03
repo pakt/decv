@@ -1,0 +1,4 @@
+pop     ax
+pop     cx
+cmp     cx, ax
+pushf

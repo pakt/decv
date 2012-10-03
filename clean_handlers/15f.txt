@@ -1,0 +1,2 @@
+pop     ecx
+shl     dword ptr [esp], cl

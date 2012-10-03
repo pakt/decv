@@ -1,0 +1,3 @@
+lodsb
+movzx   eax, al
+push    ax

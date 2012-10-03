@@ -1,0 +1,4 @@
+lodsb
+movzx   eax, al
+mov     eax, [edi+eax*4]
+push    word ptr [eax]

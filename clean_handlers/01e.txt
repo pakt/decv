@@ -1,0 +1,3 @@
+lodsd
+pop     dx
+mov     [eax], dl

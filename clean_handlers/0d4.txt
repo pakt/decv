@@ -1,0 +1,1 @@
+not     word ptr [esp]

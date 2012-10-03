@@ -1,0 +1,7 @@
+pop     cx
+pop     ax
+pop	dx
+idiv    cx
+push    dx
+push    ax
+pushf

@@ -1,0 +1,5 @@
+push	dword ptr [edi+1Ch]
+popf
+pop     cx
+rcr     word ptr [esp], cl
+pushf

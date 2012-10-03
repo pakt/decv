@@ -1,0 +1,6 @@
+lodsb
+add     edi, 3FCh
+movzx   eax, al
+push    dword ptr [edi+eax*4]
+sub     edi, 3FCh
+retn

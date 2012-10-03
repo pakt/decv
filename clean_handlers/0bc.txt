@@ -1,0 +1,6 @@
+pop     cx
+pop     ax
+mul     cx
+push    dx
+push    ax
+pushf

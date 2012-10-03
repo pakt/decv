@@ -1,0 +1,10 @@
+    lodsb
+    movzx   eax, al
+    cmp     eax, 7
+    jz      stack
+    mov eax, [edi+eax*4]
+    jmp     fix_edx
+stack:
+    mov eax, esp
+fix_edx:
+    add     edx, eax

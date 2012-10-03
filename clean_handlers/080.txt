@@ -1,0 +1,4 @@
+pop     cx
+pop     ax
+movsx   cx, al
+push    cx

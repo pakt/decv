@@ -1,0 +1,6 @@
+pop     ecx
+pop     eax
+imul    ecx
+push    edx
+push    eax
+pushf
